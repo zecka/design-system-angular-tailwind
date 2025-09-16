@@ -1,0 +1,29 @@
+{
+    "name": "@acme/design-system",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "build": "npm run build:package && npm run build:css",
+        "build:package": "cd packages/core-css && npm run build",
+        "build:css": "tailwindcss -i ./app.css -o ./public/output.css",
+        "build:watch": "tailwindcss -i ./app.css -o ./public/output.css --watch --poll",
+        "dev": "npm-run-all --parallel serve build:watch",
+        "serve": "live-server public --watch=index.html,output.css"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "description": "",
+    "dependencies": {
+        "@acme/ds-css": "workspace:*",
+        "@acme/ds-angular": "workspace:*",
+        "@tailwindcss/cli": "^4.1.13",
+        "npm-run-all": "^4.1.5"
+    },
+    "devDependencies": {
+        "live-server": "^1.2.2",
+        "postcss": "^8.5.6",
+        "postcss-js": "^4.0.1",
+        "tailwindcss": "^4.1.13"
+    }
+}

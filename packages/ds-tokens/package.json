@@ -1,0 +1,17 @@
+{
+    "name": "@acme/ds-tokens",
+    "version": "0.0.0",
+    "type": "module",
+    "scripts": {
+        "build": "tsx build.ts",
+        "pull-tokens": "tsx cli/fetch-tokens.ts"
+    },
+    "devDependencies": {
+        "fs": "0.0.1-security",
+        "style-dictionary": "^5.0.4",
+        "tsx": "^4.20.5"
+    },
+    "dependencies": {
+        "dotenv": "^17.2.2"
+    }
+}

@@ -1,0 +1,34 @@
+{
+  "name": "@acme/ds-css",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Starter UI library based on DaisyUI builder",
+  "license": "MIT",
+  "main": "./index.js",
+  "module": "./index.js",
+  "scripts": {
+    "build": "node build.js"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "4.1.1",
+    "@tailwindcss/vite": "4.1.1",
+    "bun": "^1.2.22",
+    "culori": "4.0.1",
+    "lightningcss": "1.29.3",
+    "postcss": "8.5.3",
+    "postcss-js": "4.0.1",
+    "postcss-selector-parser": "7.1.0",
+    "prettier": "3.5.3",
+    "prettier-plugin-svelte": "3.3.3",
+    "prettier-plugin-tailwindcss": "0.6.11",
+    "tailwindcss": "^4.1.1"
+  },
+  "dependencies": {
+    "class-variance-authority": "^0.7.1",
+    "daisyui": "^5.1.12",
+    "detect-libc": "^2.1.0",
+    "lightningcss-darwin-arm64": "^1.29.3"
+  },
+  "keywords": [],
+  "author": ""
+}

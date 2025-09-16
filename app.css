@@ -1,0 +1,30 @@
+
+@import "tailwindcss" source(none);
+@source "./public/*.{html,js}";
+@plugin "@acme/ds-css";
+ /* remove default color declarations */
+@theme {
+  /* remove default color declarations */
+  --color-*: initial;
+  /* your custom colors */
+  --color-base: #fff;
+  --color-text: #000;
+  --color-purple: #3f3cbb;
+  --color-midnight: #121063;
+  --color-tahiti: #3ab7bf;
+  --color-bermuda: #78dcca;
+}
+
+.dark {
+  --color-base: #1f2937;
+  --color-text: #fff;
+  --color-purple: #a78bfa;
+  --color-midnight: #d6bcfa;
+  --color-tahiti: #67e8f9;
+  --color-bermuda: #b5f4f4;
+}
+.demo {
+    background-color: var(--color-base);
+    color: var(--color-text);
+  @apply btn;
+}

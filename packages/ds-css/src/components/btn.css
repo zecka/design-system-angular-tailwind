@@ -1,0 +1,38 @@
+.btn {
+    padding: var(--shell-padding-y) var(--component-general-padding-x);
+    border-radius: var(--component-general-radius);
+    display: inline-flex;
+    gap: var(--component-general-gap-x);
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+
+    &.btn-primary{
+        background-color: var(--component-button-primary-default-color-background);
+        color: var(--component-button-primary-default-color-label);
+    }
+    &.btn-danger{
+        background-color: var(--component-primary-background-danger-default);
+        /* // !!! Wrong Token Check with design team */
+        color: var(--component-button-primary-default-color-label); 
+    }
+
+    &.btn-secondary{
+        border: var(--component-button-secondary-default-border-stroke) solid var(--component-button-secondary-default-border-color);
+        background-color: var(--component-button-secondary-default-color-background);
+    }
+
+    &.btn-lg{
+        font-size: 1.25rem;
+        padding: 0.75rem 1.5rem;
+    }
+    &.btn-sm{
+        font-size: 0.875rem;
+        padding: 0.25rem 0.5rem;
+    }
+    &.btn-disabled{
+        background-color: lightgray;
+        color: darkgray;
+        cursor: not-allowed;
+    }
+}

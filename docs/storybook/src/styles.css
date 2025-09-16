@@ -1,0 +1,6 @@
+@import "tailwindcss";
+@import "../../../packages/ds-tokens/build/css/index.css";
+@plugin "../../../packages/ds-css";
+.test{
+    counter: 134;
+}
