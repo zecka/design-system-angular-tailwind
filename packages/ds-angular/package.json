@@ -5,8 +5,8 @@
     "ng": "ng",
     "start": "ng serve",
     "demo": "ng build demo",
-    "dev": "ng build design-system --watch",
-    "build": "ng build",
+    "dev": "ng build ds-angular --watch",
+    "build": "ng build ds-angular",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "compodoc": "compodoc -p projects/design-system/tsconfig.lib.json -e json -d projects/design-system"
