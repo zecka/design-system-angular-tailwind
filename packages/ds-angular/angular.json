@@ -4,105 +4,20 @@
   "newProjectRoot": "projects",
   "projects": {
     "ds-angular": {
-      "projectType": "application",
-      "schematics": {},
-      "root": "",
-      "sourceRoot": "src",
-      "prefix": "app",
-      "architect": {
-        "build": {
-          "builder": "@angular/build:application",
-          "options": {
-            "browser": "src/main.ts",
-            "polyfills": [
-              "zone.js"
-            ],
-            "tsConfig": "tsconfig.app.json",
-            "assets": [
-              {
-                "glob": "**/*",
-                "input": "public"
-              }
-            ],
-            "styles": [
-              "src/styles.css"
-            ]
-          },
-          "configurations": {
-            "production": {
-              "budgets": [
-                {
-                  "type": "initial",
-                  "maximumWarning": "500kB",
-                  "maximumError": "1MB"
-                },
-                {
-                  "type": "anyComponentStyle",
-                  "maximumWarning": "4kB",
-                  "maximumError": "8kB"
-                }
-              ],
-              "outputHashing": "all"
-            },
-            "development": {
-              "optimization": false,
-              "extractLicenses": false,
-              "sourceMap": true
-            }
-          },
-          "defaultConfiguration": "production"
-        },
-        "serve": {
-          "builder": "@angular/build:dev-server",
-          "configurations": {
-            "production": {
-              "buildTarget": "ds-angular:build:production"
-            },
-            "development": {
-              "buildTarget": "ds-angular:build:development"
-            }
-          },
-          "defaultConfiguration": "development"
-        },
-        "extract-i18n": {
-          "builder": "@angular/build:extract-i18n"
-        },
-        "test": {
-          "builder": "@angular/build:karma",
-          "options": {
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ],
-            "tsConfig": "tsconfig.spec.json",
-            "assets": [
-              {
-                "glob": "**/*",
-                "input": "public"
-              }
-            ],
-            "styles": [
-              "src/styles.css"
-            ]
-          }
-        }
-      }
-    },
-    "design-system": {
       "projectType": "library",
-      "root": "projects/design-system",
-      "sourceRoot": "projects/design-system/src",
+      "root": "projects/ds-angular",
+      "sourceRoot": "projects/ds-angular/src",
       "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
-            "tsConfig": "projects/design-system/tsconfig.lib.json",
-            "project": "projects/design-system/ng-package.json"
+            "tsConfig": "projects/ds-angular/tsconfig.lib.json",
+            "project": "projects/ds-angular/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/design-system/tsconfig.lib.prod.json"
+              "tsConfig": "projects/ds-angular/tsconfig.lib.prod.json"
             }
           },
           "defaultConfiguration": "production"
@@ -110,20 +25,20 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "tsConfig": "projects/design-system/tsconfig.spec.json"
+            "tsConfig": "projects/ds-angular/tsconfig.spec.json"
           }
         },
         "storybook": {
           "builder": "@storybook/angular:start-storybook",
           "options": {
-            "configDir": "projects/design-system/.storybook",
-            "browserTarget": "design-system:build",
+            "configDir": "projects/ds-angular/.storybook",
+            "browserTarget": "ds-angular:build",
             "compodoc": true,
             "compodocArgs": [
               "-e",
               "json",
               "-d",
-              "projects/design-system"
+              "projects/ds-angular"
             ],
             "port": 6006
           }
@@ -131,14 +46,14 @@
         "build-storybook": {
           "builder": "@storybook/angular:build-storybook",
           "options": {
-            "configDir": "projects/design-system/.storybook",
-            "browserTarget": "design-system:build",
+            "configDir": "projects/ds-angular/.storybook",
+            "browserTarget": "ds-angular:build",
             "compodoc": true,
             "compodocArgs": [
               "-e",
               "json",
               "-d",
-              "projects/design-system"
+              "projects/ds-angular"
             ],
             "outputDir": "storybook-static"
           }
