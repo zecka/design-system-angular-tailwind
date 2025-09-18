@@ -1,0 +1,14 @@
+{
+    "name": "@acme/ds-angular-demo",
+    "version": "0.0.1",
+    "peerDependencies": {
+        "@angular/common": "^19.2.15",
+        "@angular/core": "^19.2.15",
+        "ng-primitives": "^0.79.0"
+    },
+    "dependencies": {
+        "@acme/ds-angular": "workspace:*",
+        "tslib": "^2.3.0"
+    },
+    "sideEffects": false
+}

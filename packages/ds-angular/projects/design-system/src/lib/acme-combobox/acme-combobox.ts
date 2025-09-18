@@ -66,6 +66,9 @@ export class AcmeCombobox implements ControlValueAccessor {
   ngOnInit(): void {
     console.log('AcmeCombobox initialized', {
       search: this.search(),
+      options: this.options(),
+      placeholder: this.placeholder(),
+      disabled: this.disabled(),
     });
   }
 

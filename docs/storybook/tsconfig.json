@@ -3,6 +3,9 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "types": [
+      "node"
+    ],
     "strict": true,
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
@@ -15,14 +18,7 @@
     "target": "ES2022",
     "module": "preserve",
     "baseUrl": ".",
-    "paths": {
-      "@ds-angular": [
-        "../../packages/ds-angular/projects/design-system/src/public-api.ts"
-      ],
-      "@ds-angular/*": [
-        "../../packages/ds-angular/projects/design-system/src/lib/*"
-      ]
-    }
+    "paths": {}
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,

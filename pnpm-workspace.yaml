@@ -1,4 +1,3 @@
 packages:
   - "docs/*"
   - "packages/*"
-  - "packages/ds-angular/dist/design-system"

@@ -2,11 +2,18 @@
   "name": "@acme/ds-angular",
   "version": "0.0.1",
   "peerDependencies": {
-    "@angular/common": "^20.3.0",
-    "@angular/core": "^20.3.0"
+    "@angular/common": "^19.2.15",
+    "@angular/core": "^19.2.15",
+    "ng-primitives": "^0.79.0"
   },
   "dependencies": {
     "tslib": "^2.3.0"
   },
-  "sideEffects": false
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "import": "./dist/ds-angular/fesm2022/acme-ds-angular.mjs",
+      "require": "./dist/ds-angular/fesm2022/acme-ds-angular.js"
+    }
+  }
 }

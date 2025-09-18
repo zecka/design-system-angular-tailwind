@@ -3,5 +3,5 @@
  */
 
 export * from './lib/design-system';
-export * from './lib/acme-button/acme-button'
-export * from './lib/acme-combobox/acme-combobox'
+export * from './lib/acme-button/acme-button';
+export * from './lib/acme-combobox/acme-combobox';

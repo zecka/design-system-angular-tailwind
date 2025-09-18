@@ -19,7 +19,7 @@ export const storyHtml = <T extends ReturnType<typeof cva>>(args: StoryHtmlType<
 
 
 export const renderArgsWithModel = <T extends object>(args: T, modelArgs: string[]) => {
-    return Object.keys(args).map(key => {
+    const result = Object.keys(args).map(key => {
         if (modelArgs.includes(key)) {
             return `[(${key})]="${key}"`;
         }
@@ -35,6 +35,8 @@ export const renderArgsWithModel = <T extends object>(args: T, modelArgs: string
         }
         return `[${key}]="${key}"`;
     }).join(' ');
+    console.log('renderArgsWithModel', result);
+    return result;
 }
 
 export const renderTwoWayBinding = (selector: string, modelArgs: string[]): StoryObj<any>['render'] => (args: object) => ({

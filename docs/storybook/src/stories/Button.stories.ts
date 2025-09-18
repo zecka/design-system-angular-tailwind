@@ -1,8 +1,8 @@
 
 import type { Meta, StoryObj } from '@storybook/angular';
 import { componentWrapperDecorator } from '@storybook/angular';
-import { AcmeButton as ButtonComponent } from '@ds-angular';
-import { storyHtml, StoryHtmlType } from 'src/helpers/stories.helpers';
+import { AcmeButton as ButtonComponent } from '@acme/ds-angular';
+import { storyHtml } from 'src/helpers/stories.helpers';
 import btn from '../../../../packages/ds-css/src/components/btn.cva'
 
 
