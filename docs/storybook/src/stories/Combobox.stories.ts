@@ -1,6 +1,5 @@
 
 import type { Meta, StoryObj } from '@storybook/angular';
-import { componentWrapperDecorator } from '@storybook/angular';
 import { AcmeCombobox } from '@ds-angular';
 import { renderTwoWayBinding, StoryHtmlType } from 'src/helpers/stories.helpers';
 import btn from '../../../../packages/ds-css/src/components/btn.cva'
