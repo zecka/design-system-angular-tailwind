@@ -26,5 +26,4 @@
 .demo {
     background-color: var(--color-base);
     color: var(--color-text);
-  @apply btn;
 }

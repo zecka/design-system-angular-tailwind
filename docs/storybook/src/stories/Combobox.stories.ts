@@ -16,7 +16,7 @@ const meta: Meta<AcmeCombobox> = {
     parameters: {
         badge: 'test',
     },
-    argTypes: {},
+
     render: renderTwoWayBinding('acme-combobox', ['value']),
 
 };

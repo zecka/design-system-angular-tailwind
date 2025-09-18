@@ -22,6 +22,7 @@ variableGroups.forEach((selector) => {
 
 const preview: Preview = {
   parameters: {
+    actions: { disable: true },
     docs: {
       codePanel: true,
     },

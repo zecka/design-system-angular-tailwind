@@ -7,14 +7,14 @@
   "main": "./index.js",
   "module": "./index.js",
   "scripts": {
-    "build": "node build.js"
+    "build": "node build.js",
+    "dev": "node build.js --watch"
   },
   "devDependencies": {
     "@tailwindcss/cli": "4.1.1",
     "@tailwindcss/vite": "4.1.1",
     "@types/node": "^24.5.2",
-    "bun": "^1.2.22",
-    "culori": "4.0.1",
+    "chokidar": "^4.0.3",
     "lightningcss": "1.29.3",
     "postcss": "8.5.3",
     "postcss-js": "4.0.1",

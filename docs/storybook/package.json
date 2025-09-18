@@ -18,6 +18,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "storybook": "ng run taskbox:storybook",
+    "dev": "ng run taskbox:storybook",
     "build-storybook": "ng run taskbox:build-storybook",
     "init-msw": "msw init public/"
   },
