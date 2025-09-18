@@ -6,7 +6,7 @@
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
-
+    background: red !important;
     &.btn-primary{
         background-color: var(--component-button-primary-default-color-background);
         color: var(--component-button-primary-default-color-label);

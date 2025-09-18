@@ -67,7 +67,7 @@ export const BasicHtml: StoryHtml = {
     render: (args) => ({
         props: args,
         template: `<div class="acme-combobox">
-            <div>Select an option</div>
+            <div>Select an option salut</div>
         </div>`,
     }),
 };

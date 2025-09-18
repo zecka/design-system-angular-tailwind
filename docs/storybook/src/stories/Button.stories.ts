@@ -31,7 +31,7 @@ export const Basic: Story = {
 export const HtmlButton = storyHtml({
   render: (args) => ({
     props: args,
-    template: `<button class="btn ${btn({ intent: args.intent })}">TEST</button>`,
+    template: `<button class="btn ${btn({ intent: args.intent })}">TEsST</button>`,
   }),
   args: {
     intent: 'secondary',
