@@ -16,11 +16,11 @@
     "module": "preserve",
     "baseUrl": ".",
     "paths": {
-      "@ds-angular": [
-        "../../packages/ds-angular/projects/design-system/src/public-api.ts"
+      "@acme/ds-angular": [
+        "../../packages/ds-angular/src/public-api.ts"
       ],
       "@ds-angular/*": [
-        "../../packages/ds-angular/projects/design-system/src/lib/*"
+        "../../packages/ds-angular/src/lib/*"
       ]
     }
   },

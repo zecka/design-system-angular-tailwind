@@ -1,13 +1,12 @@
 {
-  "name": "ds-angular-workspace",
+  "name": "@acme/ds-angular",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build design-system",
-    "dev": "ng build --watch --configuration development",
+    "build": "ng build ds-angular",
+    "dev": "ng build ds-angular --watch --configuration development",
     "test": "ng test",
-    "compodoc": "compodoc -p projects/design-system/tsconfig.lib.json -e json -d projects/design-system"
+    "compodoc": "compodoc -p tsconfig.lib.json -e json -d dist/compodoc"
   },
   "prettier": {
     "printWidth": 100,
@@ -22,7 +21,7 @@
     ]
   },
   "private": true,
-  "dependencies": {
+  "peerDependencies": {
     "@angular/cdk": "^20.0.0",
     "@angular/common": "^20.3.0",
     "@angular/compiler": "^20.3.0",
@@ -35,6 +34,7 @@
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0"
   },
+  "dependencies": {},
   "devDependencies": {
     "@angular-devkit/build-angular": "^20.3.0",
     "@angular/build": "^20.3.1",

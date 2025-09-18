@@ -15,7 +15,7 @@ const config: StorybookConfig = {
     cfg.resolve = cfg.resolve || {};
     cfg.resolve.alias = {
       ...(cfg.resolve.alias || {}),
-      '@ds-angular': path.resolve(__dirname, '../../../packages/ds-angular/projects/design-system/src/public-api.ts'),
+      '@acme/ds-angular': path.resolve(__dirname, '../../../packages/ds-angular/src/public-api.ts'),
     };
     return cfg;
   },

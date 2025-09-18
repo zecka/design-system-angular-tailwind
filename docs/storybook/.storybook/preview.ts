@@ -1,6 +1,6 @@
 import type { Decorator, Preview } from '@storybook/angular';
 import { setCompodocJson } from '@storybook/addon-docs/angular';
-import docJson from '../../../packages/ds-angular/projects/design-system/documentation.json';
+import docJson from '../../../packages/ds-angular/dist/compodoc/documentation.json';
 import { variableGroups } from "../../../packages/ds-tokens/variable-groups"
 setCompodocJson(docJson);
 
