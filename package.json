@@ -8,7 +8,7 @@
         "build:css": "tailwindcss -i ./app.css -o ./public/output.css",
         "build:watch": "tailwindcss -i ./app.css -o ./public/output.css --watch --poll",
         "dev": "npm-run-all --parallel serve build:watch",
-        "serve": "live-server public --watch=index.html,output.css"
+        "serve": "live-server public --watch=index.html,output.css",
     },
     "keywords": [],
     "author": "",

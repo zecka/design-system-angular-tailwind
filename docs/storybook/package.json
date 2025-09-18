@@ -23,7 +23,6 @@
   },
   "private": true,
   "dependencies": {
-    "@acme/ds-angular": "workspace:*",
     "@angular/common": "^20.3.0",
     "@angular/compiler": "^20.3.0",
     "@angular/core": "^20.3.0",
@@ -48,6 +47,7 @@
     "@storybook/angular": "^9.1.5",
     "@tailwindcss/postcss": "^4.1.13",
     "@types/jasmine": "~5.1.0",
+    "@types/node": "^24.5.2",
     "jasmine-core": "~5.9.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
