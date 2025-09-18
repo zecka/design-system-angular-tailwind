@@ -2,10 +2,9 @@
 import type { Meta, StoryObj } from '@storybook/angular';
 import { componentWrapperDecorator } from '@storybook/angular';
 import { AcmeButton as ButtonComponent } from '@ds-angular';
-import { StoryHtmlType } from 'src/helpers/stories.helpers';
+import { storyHtml, StoryHtmlType } from 'src/helpers/stories.helpers';
 import btn from '../../../../packages/ds-css/src/components/btn.cva'
 
-type StoryHtml = StoryHtmlType<typeof btn>;
 
 
 
@@ -15,7 +14,6 @@ const meta: Meta<ButtonComponent> = {
   component: ButtonComponent,
   tags: ['autodocs'],
   decorators: [
-    //👇 Wraps our stories with a decorator
     componentWrapperDecorator((story) => `<div style="margin: 3em">TEST DECOARTOR${story}</div>`),
   ],
   argTypes: {},
@@ -29,7 +27,8 @@ export const Basic: Story = {
   args: {
   },
 };
-export const HtmlButton: StoryHtml = {
+
+export const HtmlButton = storyHtml({
   render: (args) => ({
     props: args,
     template: `<button class="btn ${btn({ intent: args.intent })}">TEST</button>`,
@@ -39,7 +38,8 @@ export const HtmlButton: StoryHtml = {
     size: 'sm',
     disabled: false,
   },
-}
+}, btn);
+
 // More on writing stories with args: https://storybook.js.org/docs/writing-stories/args
 export const Primary: Story = {
   args: {

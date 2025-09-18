@@ -1,0 +1,575 @@
+{
+    "pipes": [],
+    "interfaces": [],
+    "injectables": [],
+    "guards": [],
+    "interceptors": [],
+    "classes": [],
+    "directives": [],
+    "components": [
+        {
+            "name": "AcmeButton",
+            "id": "component-AcmeButton-d7eef075bd870998206fd22a7387aed1fa26b3fb525fb829ab4ccf141218ae93e1165bae7d7cdd118a4133289f08762f420e51d627a890a9459e40aa8897c889",
+            "file": "projects/design-system/src/lib/acme-button/acme-button.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "lib-acme-button",
+            "styleUrls": [],
+            "styles": [],
+            "templateUrl": [
+                "./acme-button.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": false,
+            "imports": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input } from '@angular/core';\n\n@Component({\n  selector: 'lib-acme-button',\n  imports: [],\n  templateUrl: './acme-button.html',\n  styleUrl: './acme-button.css'\n})\nexport class AcmeButton {\n\n\n}\n",
+            "styleUrl": "./acme-button.css",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "extends": [],
+            "templateData": "<p>acme-button work well!</p>"
+        },
+        {
+            "name": "AcmeCombobox",
+            "id": "component-AcmeCombobox-f52818b181a821a52843f75bab9fd9a3495979797d7666c71be03070cd1a582dad90e06982e1415f20ba55ee102def008bfaa7c62ac9128c91b980b4847c43f7",
+            "file": "projects/design-system/src/lib/acme-combobox/acme-combobox.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [
+                {
+                    "name": "provideValueAccessor(AcmeCombobox)"
+                }
+            ],
+            "selector": "acme-combobox",
+            "styleUrls": [],
+            "styles": [],
+            "templateUrl": [
+                "./acme-combobox.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [
+                {
+                    "name": "disabled",
+                    "defaultValue": "false, {    transform: booleanAttribute,  }",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "boolean, BooleanInput",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "<p>The disabled state of the combobox.</p>\n",
+                    "line": 44,
+                    "rawdescription": "\nThe disabled state of the combobox.",
+                    "modifierKind": [
+                        148
+                    ],
+                    "required": false
+                },
+                {
+                    "name": "options",
+                    "defaultValue": "[]",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string[]",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "<p>The options for the combobox.</p>\n",
+                    "line": 32,
+                    "rawdescription": "\nThe options for the combobox.",
+                    "modifierKind": [
+                        148
+                    ],
+                    "required": false
+                },
+                {
+                    "name": "placeholder",
+                    "defaultValue": "''",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "<p>The placeholder for the input.</p>\n",
+                    "line": 41,
+                    "rawdescription": "\nThe placeholder for the input.",
+                    "modifierKind": [
+                        148
+                    ],
+                    "required": false
+                },
+                {
+                    "name": "search",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "boolean",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 34,
+                    "modifierKind": [
+                        148
+                    ],
+                    "required": false
+                },
+                {
+                    "name": "value",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string | undefined",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "<p>The selected value.</p>\n",
+                    "line": 37,
+                    "rawdescription": "\nThe selected value.",
+                    "modifierKind": [
+                        148
+                    ],
+                    "required": false
+                }
+            ],
+            "outputsClass": [
+                {
+                    "name": "value",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string | undefined",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "<p>The selected value.</p>\n",
+                    "line": 37,
+                    "rawdescription": "\nThe selected value.",
+                    "modifierKind": [
+                        148
+                    ],
+                    "required": false
+                }
+            ],
+            "propertiesClass": [
+                {
+                    "name": "filter",
+                    "defaultValue": "signal<string>('')",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "<p>The filter value.</p>\n",
+                    "line": 49,
+                    "rawdescription": "\nThe filter value.",
+                    "modifierKind": [
+                        124,
+                        148
+                    ]
+                },
+                {
+                    "name": "filteredOptions",
+                    "defaultValue": "computed(() =>\n    this.search() ? this.options().filter(option => option.toLowerCase().includes(this.filter().toLowerCase())) : this.options(),\n  )",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "<p>Get the filtered options.</p>\n",
+                    "line": 52,
+                    "rawdescription": "\nGet the filtered options.",
+                    "modifierKind": [
+                        124,
+                        148
+                    ]
+                },
+                {
+                    "name": "formDisabled",
+                    "defaultValue": "signal(false)",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "<p>Store the form disabled state</p>\n",
+                    "line": 57,
+                    "rawdescription": "\nStore the form disabled state",
+                    "modifierKind": [
+                        124,
+                        148
+                    ]
+                },
+                {
+                    "name": "onChange",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "ChangeFn<string>",
+                    "indexKey": "",
+                    "optional": true,
+                    "description": "<p>The on change callback</p>\n",
+                    "line": 60,
+                    "rawdescription": "\nThe on change callback",
+                    "modifierKind": [
+                        123
+                    ]
+                },
+                {
+                    "name": "onTouched",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "TouchedFn",
+                    "indexKey": "",
+                    "optional": true,
+                    "description": "<p>The on touch callback</p>\n",
+                    "line": 63,
+                    "rawdescription": "\nThe on touch callback",
+                    "modifierKind": [
+                        124
+                    ]
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 65,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "onFilterChange",
+                    "args": [
+                        {
+                            "name": "event",
+                            "type": "Event",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 71,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "event",
+                            "type": "Event",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "onValueChange",
+                    "args": [
+                        {
+                            "name": "value",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 93,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "modifierKind": [
+                        124
+                    ],
+                    "jsdoctags": [
+                        {
+                            "name": "value",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "registerOnChange",
+                    "args": [
+                        {
+                            "name": "fn",
+                            "type": "ChangeFn<string | undefined>",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 81,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "fn",
+                            "type": "ChangeFn<string | undefined>",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "registerOnTouched",
+                    "args": [
+                        {
+                            "name": "fn",
+                            "type": "TouchedFn",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 85,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "fn",
+                            "type": "TouchedFn",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "resetOnClose",
+                    "args": [
+                        {
+                            "name": "open",
+                            "type": "boolean",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 99,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "modifierKind": [
+                        124
+                    ],
+                    "jsdoctags": [
+                        {
+                            "name": "open",
+                            "type": "boolean",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "setDisabledState",
+                    "args": [
+                        {
+                            "name": "isDisabled",
+                            "type": "boolean",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 89,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "isDisabled",
+                            "type": "boolean",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "writeValue",
+                    "args": [
+                        {
+                            "name": "value",
+                            "type": "string | undefined",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 76,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "value",
+                            "type": "string | undefined",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": false,
+            "imports": [
+                {
+                    "name": "NgpCombobox"
+                },
+                {
+                    "name": "NgpComboboxDropdown"
+                },
+                {
+                    "name": "NgpComboboxOption"
+                },
+                {
+                    "name": "NgpComboboxInput"
+                },
+                {
+                    "name": "NgpComboboxPortal"
+                },
+                {
+                    "name": "NgpComboboxButton"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { BooleanInput } from '@angular/cdk/coercion';\nimport { booleanAttribute, Component, computed, Input, input, model, signal } from '@angular/core';\nimport { ControlValueAccessor } from '@angular/forms';\n\nimport {\n  NgpCombobox,\n  NgpComboboxButton,\n  NgpComboboxDropdown,\n  NgpComboboxInput,\n  NgpComboboxOption,\n  NgpComboboxPortal,\n} from 'ng-primitives/combobox';\nimport { ChangeFn, provideValueAccessor, TouchedFn } from 'ng-primitives/utils';\n\n@Component({\n  selector: 'acme-combobox',\n  templateUrl: './acme-combobox.html',\n  styleUrl: './acme-combobox.css',\n  providers: [provideValueAccessor(AcmeCombobox)],\n  imports: [\n    NgpCombobox,\n    NgpComboboxDropdown,\n    NgpComboboxOption,\n    NgpComboboxInput,\n    NgpComboboxPortal,\n    NgpComboboxButton,\n  ],\n})\nexport class AcmeCombobox implements ControlValueAccessor {\n\n  /** The options for the combobox. */\n  readonly options = input<string[]>([]);\n\n  readonly search = input<boolean>(false);\n\n  /** The selected value. */\n  readonly value = model<string | undefined>();\n\n\n  /** The placeholder for the input. */\n  readonly placeholder = input<string>('');\n\n  /** The disabled state of the combobox. */\n  readonly disabled = input<boolean, BooleanInput>(false, {\n    transform: booleanAttribute,\n  });\n\n  /** The filter value. */\n  protected readonly filter = signal<string>('');\n\n  /** Get the filtered options. */\n  protected readonly filteredOptions = computed(() =>\n    this.search() ? this.options().filter(option => option.toLowerCase().includes(this.filter().toLowerCase())) : this.options(),\n  );\n\n  /** Store the form disabled state */\n  protected readonly formDisabled = signal(false);\n\n  /** The on change callback */\n  private onChange?: ChangeFn<string>;\n\n  /** The on touch callback */\n  protected onTouched?: TouchedFn;\n\n  ngOnInit(): void {\n    console.log('AcmeCombobox initialized', {\n      search: this.search(),\n    });\n  }\n\n  onFilterChange(event: Event): void {\n    const input = event.target as HTMLInputElement;\n    this.filter.set(input.value);\n  }\n\n  writeValue(value: string | undefined): void {\n    this.value.set(value);\n    this.filter.set(value ?? '');\n  }\n\n  registerOnChange(fn: ChangeFn<string | undefined>): void {\n    this.onChange = fn;\n  }\n\n  registerOnTouched(fn: TouchedFn): void {\n    this.onTouched = fn;\n  }\n\n  setDisabledState(isDisabled: boolean): void {\n    this.formDisabled.set(isDisabled);\n  }\n\n  protected onValueChange(value: string): void {\n    this.onChange?.(value);\n    // update the filter value\n    this.filter.set(value);\n  }\n\n  protected resetOnClose(open: boolean): void {\n    // if the dropdown is closed, reset the filter value\n    if (open) {\n      return;\n    }\n\n    // if the filter value is empty, set the value to undefined\n    if (this.filter() === '') {\n      this.value.set(undefined);\n    } else {\n      // otherwise set the filter value to the selected value\n      this.filter.set(this.value() ?? '');\n    }\n  }\n\n}\n",
+            "styleUrl": "./acme-combobox.css",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "extends": [],
+            "implements": [
+                "ControlValueAccessor"
+            ],
+            "templateData": "<div [(ngpComboboxValue)]=\"value\" [ngpComboboxDisabled]=\"disabled() || formDisabled()\" (ngpComboboxOpenChange)=\"resetOnClose($event)\" (ngpComboboxValueChange)=\"onValueChange($event)\" ngpCombobox>\n    @if (search()) {\n    <input [value]=\"filter()\" [placeholder]=\"placeholder()\" (input)=\"onFilterChange($event)\" (blur)=\"onTouched?.()\" ngpComboboxInput />\n    }\n\n    <button ngpComboboxButton>\n        @if(!search()){\n        {{ value() || 'Select an option' }}\n        }\n        ▼\n    </button>\n\n\n    <div *ngpComboboxPortal ngpComboboxDropdown>\n        @for (option of filteredOptions(); track option) {\n        <div [ngpComboboxOptionValue]=\"option\" ngpComboboxOption>\n            {{ option }}\n        </div>\n        } @empty {\n        <div class=\"empty-message\">No options found</div>\n        }\n    </div>\n</div>"
+        },
+        {
+            "name": "DesignSystem",
+            "id": "component-DesignSystem-a8ba5a44457ccab72847401222098678b61a8f50f38403fb56dd28a4d0c7478c4b7e0e7330b396d740f05c38e42e2b6cbdd7d237ed9b4332e7d9f4f122b1f95c",
+            "file": "projects/design-system/src/lib/design-system.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "lib-design-system",
+            "styleUrls": [],
+            "styles": [
+                ""
+            ],
+            "template": "<p>\n  design-system works3!\n</p>\n",
+            "templateUrl": [],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": false,
+            "imports": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'lib-design-system',\n  imports: [],\n  template: `\n    <p>\n      design-system works3!\n    </p>\n  `,\n  styles: ``\n})\nexport class DesignSystem {\n\n}\n\n",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "\n",
+            "extends": []
+        }
+    ],
+    "modules": [],
+    "miscellaneous": [],
+    "routes": {
+        "name": "<root>",
+        "kind": "module",
+        "children": []
+    },
+    "coverage": {
+        "count": 16,
+        "status": "low",
+        "files": [
+            {
+                "filePath": "projects/design-system/src/lib/acme-button/acme-button.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "AcmeButton",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/design-system/src/lib/acme-combobox/acme-combobox.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "AcmeCombobox",
+                "coveragePercent": 50,
+                "coverageCount": "10/20",
+                "status": "medium"
+            },
+            {
+                "filePath": "projects/design-system/src/lib/design-system.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "DesignSystem",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            }
+        ]
+    }
+}

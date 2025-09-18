@@ -1,0 +1,23 @@
+<div [(ngpComboboxValue)]="value" [ngpComboboxDisabled]="disabled() || formDisabled()" (ngpComboboxOpenChange)="resetOnClose($event)" (ngpComboboxValueChange)="onValueChange($event)" ngpCombobox>
+    @if (search()) {
+    <input [value]="filter()" [placeholder]="placeholder()" (input)="onFilterChange($event)" (blur)="onTouched?.()" ngpComboboxInput />
+    }
+
+    <button ngpComboboxButton>
+        @if(!search()){
+        {{ value() || 'Select an option' }}
+        }
+        ▼
+    </button>
+
+
+    <div *ngpComboboxPortal ngpComboboxDropdown>
+        @for (option of filteredOptions(); track option) {
+        <div [ngpComboboxOptionValue]="option" ngpComboboxOption>
+            {{ option }}
+        </div>
+        } @empty {
+        <div class="empty-message">No options found</div>
+        }
+    </div>
+</div>
