@@ -5,10 +5,6 @@
     "scripts": {
         "build": "pnpm run --parallel build",
         "dev": "pnpm run --parallel dev",
-        "build:ds-css": "cd packages/ds-css && npm run build",
-        "build:ds-angular": "cd packages/ds-angular && npm run build",
-        "build:ds-tokens": "cd packages/ds-tokens && npm run build",
-        "serve": "live-server public --watch=index.html,output.css"
     },
     "keywords": [],
     "author": "",
