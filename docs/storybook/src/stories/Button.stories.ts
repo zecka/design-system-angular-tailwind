@@ -14,7 +14,7 @@ const meta: Meta<ButtonComponent> = {
   component: ButtonComponent,
   tags: ['autodocs'],
   decorators: [
-    componentWrapperDecorator((story) => `<div style="margin: 3em">TEST DECOARTOR${story}</div>`),
+    componentWrapperDecorator((story) => `${story}`),
   ],
   argTypes: {},
 };

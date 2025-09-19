@@ -4,7 +4,6 @@ import docJson from '../../../packages/ds-angular/dist/compodoc/documentation.js
 import { variableGroups } from "../../../packages/ds-tokens/variable-groups"
 setCompodocJson(docJson);
 
-
 const globalTypes: Preview['globalTypes'] = {};
 variableGroups.forEach((selector) => {
   globalTypes[selector.id] = {

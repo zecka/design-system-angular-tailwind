@@ -3,7 +3,6 @@ export const cleanCss = (cssContent) => {
   const emptyFallbackRegex = /var\((--[^,)]+),\s*\)/g
   const spacingWidthFallbackRegex =
     /var\((--(spacing|width)[\w-]*),\s*((?:[^)(]+|\((?:[^)(]+|\([^)(]*\))*\))*)\)/g
-  const spacingVarRegex = /var\(--spacing\)/g
 
   // Remove empty fallbacks
   cssContent = cssContent.replace(emptyFallbackRegex, "var($1)")
@@ -18,7 +17,8 @@ export const cleanCss = (cssContent) => {
   )
 
   // Replace all `var(--spacing)` with `0.25rem`
-  cssContent = cssContent.replace(spacingVarRegex, "0.25rem")
+  // const spacingVarRegex = /var\(--spacing\)/g
+  // cssContent = cssContent.replace(spacingVarRegex, "0.25rem")
 
   return cssContent
 }
