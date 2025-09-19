@@ -7,12 +7,6 @@
         "build:plugin": "tsup",
         "pull-tokens": "tsx src/fetch-tokens.ts"
     },
-    "main": "./dist/cjs/stylelint-plugin.cjs",
-    "module": "./dist/esm/stylelint-plugin.js",
-    "exports": {
-        "require": "./dist/cjs/stylelint-plugin.cjs",
-        "import": "./dist/esm/stylelint-plugin.js"
-    },
     "peerDependencies": {
         "stylelint": "^16.24.0"
     },

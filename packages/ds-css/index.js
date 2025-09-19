@@ -1,7 +1,9 @@
+
 const version = ""
 import { plugin } from "./functions/plugin.js"
 import { pluginOptionsHandler } from "./functions/pluginOptionsHandler.js"
 import { components } from "./imports.js"
+import variables from "@acme/ds-tokens/dist/acme-allowed-vars";
 
 export default plugin.withOptions(
     (options) => {
@@ -33,7 +35,6 @@ export default plugin.withOptions(
         }
     },
     () => ({
-        theme: {
-        },
+        theme: variables,
     }),
 )

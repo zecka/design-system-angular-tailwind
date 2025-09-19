@@ -24,7 +24,4 @@
   --color-tahiti: #67e8f9;
   --color-bermuda: #b5f4f4;
 }
-.demo {
-    background-color: var(--color-base);
-    color: var(--color-text);
-}
+

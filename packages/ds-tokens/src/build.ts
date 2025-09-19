@@ -116,7 +116,7 @@ const build = async () => {
                 buildPath: distPath,
                 files: [
                     ...cssBuildFiles({
-                        filesName: `acme-css-theme`,
+                        filesName: `acme-allowed-vars`,
                         selector: `@theme`,
                         filter: () => true
                     }),

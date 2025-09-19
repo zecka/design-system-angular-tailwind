@@ -257,9 +257,6 @@ importers:
       class-variance-authority:
         specifier: ^0.7.1
         version: 0.7.1
-      daisyui:
-        specifier: ^5.1.12
-        version: 5.1.13
       detect-libc:
         specifier: ^2.1.0
         version: 2.1.0
@@ -3556,9 +3553,6 @@ packages:
 
   custom-event@1.0.1:
     resolution: {integrity: sha512-GAj5FOq0Hd+RsCGVJxZuKaIDXDf3h6GQoNEjFgbLLI/trgtavwUbSnZ5pVfg27DVCaWjIohryS0JFwIJyT2cMg==}
-
-  daisyui@5.1.13:
-    resolution: {integrity: sha512-KWPF/4R+EHTJRqKZFNmSDPfAZ5xeS6YWB/2kS7Y6wGKg+atscUi2DOp6HoDD/OgGML0PJTtTpgwpTfeHVfjk7w==}
 
   data-view-buffer@1.0.2:
     resolution: {integrity: sha512-EmKO5V3OLXh1rtK2wgXRansaK1/mtVdTUEiEI0W8RkvgT05kfxaH29PliLnpLP73yYO6142Q72QNa8Wx/A5CqQ==}
@@ -11859,8 +11853,6 @@ snapshots:
 
   custom-event@1.0.1: {}
 
-  daisyui@5.1.13: {}
-
   data-view-buffer@1.0.2:
     dependencies:
       call-bound: 1.0.4
@@ -16232,10 +16224,10 @@ snapshots:
 
   vite@6.3.6(@types/node@24.5.2)(jiti@2.5.1)(less@4.4.1)(lightningcss@1.29.3)(sass@1.92.1)(terser@5.44.0)(tsx@4.20.5):
     dependencies:
-      esbuild: 0.25.4
-      fdir: 6.5.0(picomatch@4.0.2)
-      picomatch: 4.0.2
-      postcss: 8.5.6
+      esbuild: 0.25.10
+      fdir: 6.5.0(picomatch@4.0.3)
+      picomatch: 4.0.3
+      postcss: 8.5.3
       rollup: 4.51.0
       tinyglobby: 0.2.15
     optionalDependencies:

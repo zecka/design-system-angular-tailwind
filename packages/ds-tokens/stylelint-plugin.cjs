@@ -1,7 +1,7 @@
 const { readFileSync } = require("fs");
 const { resolve, dirname } = require("path");
 const { createPlugin, utils } = require("stylelint");
-const vars = JSON.parse(readFileSync(resolve(__dirname, "dist/acme-css-theme.json"), "utf8"));
+const vars = JSON.parse(readFileSync(resolve(__dirname, "dist/acme-allowed-vars.json"), "utf8"));
 
 const ruleName = "acme/no-unknown-css-vars";
 const messages = utils.ruleMessages(ruleName, {

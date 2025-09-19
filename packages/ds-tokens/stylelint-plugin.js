@@ -6,7 +6,7 @@ import stylelint from "stylelint";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-const jsonPath = resolve(__dirname, "dist/acme-css-theme.json");
+const jsonPath = resolve(__dirname, "dist/acme-allowed-vars.json");
 const vars = JSON.parse(readFileSync(jsonPath, "utf8"));
 
 const {
