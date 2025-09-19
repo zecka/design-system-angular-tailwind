@@ -3,7 +3,7 @@ import { setCompodocJson } from '@storybook/addon-docs/angular';
 import docJson from '../../../packages/ds-angular/dist/compodoc/documentation.json';
 import { variableGroups } from "../../../packages/ds-tokens/variable-groups"
 setCompodocJson(docJson);
-
+import "../src/styles.css";
 
 const globalTypes: Preview['globalTypes'] = {};
 variableGroups.forEach((selector) => {

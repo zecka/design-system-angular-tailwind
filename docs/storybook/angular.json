@@ -87,10 +87,9 @@
           }
         },
         "storybook": {
-          "builder": "@storybook/angular:start-storybook",
+          "builder": "@analogjs/storybook-angular:start-storybook",
           "options": {
             "configDir": ".storybook",
-            "browserTarget": "taskbox:build",
             "compodoc": false,
             "compodocArgs": [
               "-e",
@@ -102,10 +101,9 @@
           }
         },
         "build-storybook": {
-          "builder": "@storybook/angular:build-storybook",
+          "builder": "@analogjs/storybook-angular:build-storybook",
           "options": {
             "configDir": ".storybook",
-            "browserTarget": "taskbox:build",
             "compodoc": false,
             "compodocArgs": [
               "-e",

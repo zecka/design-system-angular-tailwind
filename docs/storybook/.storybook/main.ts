@@ -1,5 +1,7 @@
-import type { StorybookConfig } from '@storybook/angular';
-import path from 'path';
+import viteTsConfigPaths from 'vite-tsconfig-paths';
+import { UserConfig, mergeConfig } from 'vite';
+
+import type { StorybookConfig } from '@analogjs/storybook-angular';
 
 const config: StorybookConfig = {
   stories: ['../src/**/*.mdx', '../src/**/*.stories.@(js|jsx|mjs|ts|tsx)'],
@@ -8,16 +10,20 @@ const config: StorybookConfig = {
   ],
   staticDirs: ['../public'],
   framework: {
-    name: '@storybook/angular',
+    name: '@analogjs/storybook-angular',
     options: {},
   },
-  webpackFinal: async (cfg) => {
-    cfg.resolve = cfg.resolve || {};
-    cfg.resolve.alias = {
-      ...(cfg.resolve.alias || {}),
-      '@acme/ds-angular': path.resolve(__dirname, '../../../packages/ds-angular/src/public-api.ts'),
-    };
-    return cfg;
+  async viteFinal(config: UserConfig) {
+
+
+    return mergeConfig(config, {
+      server: {
+        watch: {
+          usePolling: true
+        }
+      },
+      plugins: [viteTsConfigPaths(), (await import('@tailwindcss/vite')).default()],
+    });
   },
 };
 export default config;
