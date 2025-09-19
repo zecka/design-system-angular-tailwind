@@ -4,7 +4,8 @@
     "main": "index.js",
     "scripts": {
         "build": "pnpm run --parallel build",
-        "dev": "pnpm run --parallel dev"
+        "dev": "pnpm run --parallel dev",
+        "clean:modules": "find . -name 'node_modules' -type d -prune -exec rm -rf '{}' +"
     },
     "keywords": [],
     "author": "",
