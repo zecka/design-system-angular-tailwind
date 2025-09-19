@@ -14,9 +14,9 @@ export const pluginOptionsHandler = (() => {
 
     if (logs !== false && firstRun) {
       /*! 🌼 daisyUI log */
-      console.log(
-        `${atob("Lyoh")} ${decodeURIComponent("%F0%9F%8C%BC")} ${atob("ZGFpc3lVSQ==")} ${packageVersion} ${atob("Ki8=")}`,
-      )
+      // console.log(
+      //   `${atob("Lyoh")} ${decodeURIComponent("%F0%9F%8C%BC")} ${atob("ZGFpc3lVSQ==")} ${packageVersion} ${atob("Ki8=")}`,
+      // )
       firstRun = false
     }
 

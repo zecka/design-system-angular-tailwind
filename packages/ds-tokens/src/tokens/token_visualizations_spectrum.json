@@ -1,0 +1,264 @@
+{
+  "categorical": {
+    "col-1": {
+      "type": "color",
+      "value": "{color.teal.500}"
+    },
+    "col-10": {
+      "type": "color",
+      "value": "{color.amber.700}"
+    },
+    "col-11": {
+      "type": "color",
+      "value": "{color.emerald.700}"
+    },
+    "col-12": {
+      "type": "color",
+      "value": "{color.cyan.200}"
+    },
+    "col-2": {
+      "type": "color",
+      "value": "{color.indigo.700}"
+    },
+    "col-3": {
+      "type": "color",
+      "value": "{color.orange.500}"
+    },
+    "col-4": {
+      "type": "color",
+      "value": "{color.pink.600}"
+    },
+    "col-5": {
+      "type": "color",
+      "value": "{color.indigo.400}"
+    },
+    "col-6": {
+      "type": "color",
+      "value": "{color.green.400}"
+    },
+    "col-7": {
+      "type": "color",
+      "value": "{color.sky.600}"
+    },
+    "col-8": {
+      "type": "color",
+      "value": "{color.purple.700}"
+    },
+    "col-9": {
+      "type": "color",
+      "value": "{color.yellow.400}"
+    }
+  },
+  "diverging": {
+    "neutral": {
+      "col-1": {
+        "type": "color",
+        "value": "{color.amber.950}"
+      },
+      "col-10": {
+        "type": "color",
+        "value": "{color.teal.300}"
+      },
+      "col-11": {
+        "type": "color",
+        "value": "{color.teal.500}"
+      },
+      "col-12": {
+        "type": "color",
+        "value": "{color.teal.600}"
+      },
+      "col-13": {
+        "type": "color",
+        "value": "{color.teal.700}"
+      },
+      "col-14": {
+        "type": "color",
+        "value": "{color.teal.900}"
+      },
+      "col-15": {
+        "type": "color",
+        "value": "{color.teal.950}"
+      },
+      "col-2": {
+        "type": "color",
+        "value": "{color.amber.900}"
+      },
+      "col-3": {
+        "type": "color",
+        "value": "{color.amber.700}"
+      },
+      "col-4": {
+        "type": "color",
+        "value": "{color.amber.600}"
+      },
+      "col-5": {
+        "type": "color",
+        "value": "{color.amber.500}"
+      },
+      "col-6": {
+        "type": "color",
+        "value": "{color.amber.300}"
+      },
+      "col-7": {
+        "type": "color",
+        "value": "{color.amber.200}"
+      },
+      "col-8": {
+        "type": "color",
+        "value": "{color.graphite.100}"
+      },
+      "col-9": {
+        "type": "color",
+        "value": "{color.teal.200}"
+      }
+    },
+    "thermal": {
+      "col-1": {
+        "type": "color",
+        "value": "{color.pink.950}"
+      },
+      "col-10": {
+        "type": "color",
+        "value": "{color.blue.300}"
+      },
+      "col-11": {
+        "type": "color",
+        "value": "{color.blue.500}"
+      },
+      "col-12": {
+        "type": "color",
+        "value": "{color.blue.600}"
+      },
+      "col-13": {
+        "type": "color",
+        "value": "{color.blue.700}"
+      },
+      "col-14": {
+        "type": "color",
+        "value": "{color.blue.900}"
+      },
+      "col-15": {
+        "type": "color",
+        "value": "{color.blue.950}"
+      },
+      "col-2": {
+        "type": "color",
+        "value": "{color.pink.900}"
+      },
+      "col-3": {
+        "type": "color",
+        "value": "{color.pink.700}"
+      },
+      "col-4": {
+        "type": "color",
+        "value": "{color.pink.600}"
+      },
+      "col-5": {
+        "type": "color",
+        "value": "{color.pink.500}"
+      },
+      "col-6": {
+        "type": "color",
+        "value": "{color.pink.300}"
+      },
+      "col-7": {
+        "type": "color",
+        "value": "{color.pink.200}"
+      },
+      "col-8": {
+        "type": "color",
+        "value": "{color.graphite.100}"
+      },
+      "col-9": {
+        "type": "color",
+        "value": "{color.blue.200}"
+      }
+    }
+  },
+  "sequential": {
+    "mono": {
+      "col-1": {
+        "type": "color",
+        "value": "{color.teal.100}"
+      },
+      "col-10": {
+        "type": "color",
+        "value": "{color.teal.950}"
+      },
+      "col-2": {
+        "type": "color",
+        "value": "{color.teal.200}"
+      },
+      "col-3": {
+        "type": "color",
+        "value": "{color.teal.300}"
+      },
+      "col-4": {
+        "type": "color",
+        "value": "{color.teal.400}"
+      },
+      "col-5": {
+        "type": "color",
+        "value": "{color.teal.500}"
+      },
+      "col-6": {
+        "type": "color",
+        "value": "{color.teal.600}"
+      },
+      "col-7": {
+        "type": "color",
+        "value": "{color.teal.700}"
+      },
+      "col-8": {
+        "type": "color",
+        "value": "{color.teal.800}"
+      },
+      "col-9": {
+        "type": "color",
+        "value": "{color.teal.900}"
+      }
+    },
+    "poly": {
+      "col-1": {
+        "type": "color",
+        "value": "{color.amber.100}"
+      },
+      "col-10": {
+        "type": "color",
+        "value": "{color.purple.950}"
+      },
+      "col-2": {
+        "type": "color",
+        "value": "{color.yellow.200}"
+      },
+      "col-3": {
+        "type": "color",
+        "value": "{color.lime.300}"
+      },
+      "col-4": {
+        "type": "color",
+        "value": "{color.emerald.400}"
+      },
+      "col-5": {
+        "type": "color",
+        "value": "{color.teal.500}"
+      },
+      "col-6": {
+        "type": "color",
+        "value": "{color.cyan.600}"
+      },
+      "col-7": {
+        "type": "color",
+        "value": "{color.sky.700}"
+      },
+      "col-8": {
+        "type": "color",
+        "value": "{color.blue.800}"
+      },
+      "col-9": {
+        "type": "color",
+        "value": "{color.violet.900}"
+      }
+    }
+  }
+}

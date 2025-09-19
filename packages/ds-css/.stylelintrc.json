@@ -1,0 +1,8 @@
+{
+    "plugins": [
+        "../ds-tokens/stylelint-plugin.cjs"
+    ],
+    "rules": {
+        "acme/no-unknown-css-vars": true
+    }
+}

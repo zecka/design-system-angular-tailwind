@@ -15,6 +15,7 @@ const runBuild = async () => {
             srcDir: "src/components",
             distDir: "components",
         });
+
         await generateImports("imports.js");
         await generateRawStyles({
             srcDir: "../src/components",

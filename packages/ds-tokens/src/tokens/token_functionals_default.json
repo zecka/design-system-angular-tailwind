@@ -1,0 +1,186 @@
+{
+  "danger": {
+    "50": {
+      "type": "color",
+      "value": "{color.functional.danger.50}"
+    },
+    "100": {
+      "type": "color",
+      "value": "{color.functional.danger.100}"
+    },
+    "200": {
+      "type": "color",
+      "value": "{color.functional.danger.200}"
+    },
+    "300": {
+      "type": "color",
+      "value": "{color.functional.danger.300}"
+    },
+    "400": {
+      "type": "color",
+      "value": "{color.functional.danger.400}"
+    },
+    "500": {
+      "type": "color",
+      "value": "{color.functional.danger.500}"
+    },
+    "600": {
+      "type": "color",
+      "value": "{color.functional.danger.600}"
+    },
+    "700": {
+      "type": "color",
+      "value": "{color.functional.danger.700}"
+    },
+    "800": {
+      "type": "color",
+      "value": "{color.functional.danger.800}"
+    },
+    "900": {
+      "type": "color",
+      "value": "{color.functional.danger.900}"
+    },
+    "950": {
+      "type": "color",
+      "value": "{color.functional.danger.950}"
+    }
+  },
+  "info": {
+    "50": {
+      "type": "color",
+      "value": "{color.functional.info.50}"
+    },
+    "100": {
+      "type": "color",
+      "value": "{color.functional.info.100}"
+    },
+    "200": {
+      "type": "color",
+      "value": "{color.functional.info.200}"
+    },
+    "300": {
+      "type": "color",
+      "value": "{color.functional.info.300}"
+    },
+    "400": {
+      "type": "color",
+      "value": "{color.functional.info.400}"
+    },
+    "500": {
+      "type": "color",
+      "value": "{color.functional.info.500}"
+    },
+    "600": {
+      "type": "color",
+      "value": "{color.functional.info.600}"
+    },
+    "700": {
+      "type": "color",
+      "value": "{color.functional.info.700}"
+    },
+    "800": {
+      "type": "color",
+      "value": "{color.functional.info.800}"
+    },
+    "900": {
+      "type": "color",
+      "value": "{color.functional.info.900}"
+    },
+    "950": {
+      "type": "color",
+      "value": "{color.functional.info.950}"
+    }
+  },
+  "success": {
+    "50": {
+      "type": "color",
+      "value": "{color.functional.success.50}"
+    },
+    "100": {
+      "type": "color",
+      "value": "{color.functional.success.100}"
+    },
+    "200": {
+      "type": "color",
+      "value": "{color.functional.success.200}"
+    },
+    "300": {
+      "type": "color",
+      "value": "{color.functional.success.300}"
+    },
+    "400": {
+      "type": "color",
+      "value": "{color.functional.success.400}"
+    },
+    "500": {
+      "type": "color",
+      "value": "{color.functional.success.500}"
+    },
+    "600": {
+      "type": "color",
+      "value": "{color.functional.success.600}"
+    },
+    "700": {
+      "type": "color",
+      "value": "{color.functional.success.700}"
+    },
+    "800": {
+      "type": "color",
+      "value": "{color.functional.success.800}"
+    },
+    "900": {
+      "type": "color",
+      "value": "{color.functional.success.900}"
+    },
+    "950": {
+      "type": "color",
+      "value": "{color.functional.success.950}"
+    }
+  },
+  "warning": {
+    "50": {
+      "type": "color",
+      "value": "{color.functional.warning.50}"
+    },
+    "100": {
+      "type": "color",
+      "value": "{color.functional.warning.100}"
+    },
+    "200": {
+      "type": "color",
+      "value": "{color.functional.warning.200}"
+    },
+    "300": {
+      "type": "color",
+      "value": "{color.functional.warning.300}"
+    },
+    "400": {
+      "type": "color",
+      "value": "{color.functional.warning.400}"
+    },
+    "500": {
+      "type": "color",
+      "value": "{color.functional.warning.500}"
+    },
+    "600": {
+      "type": "color",
+      "value": "{color.functional.warning.600}"
+    },
+    "700": {
+      "type": "color",
+      "value": "{color.functional.warning.700}"
+    },
+    "800": {
+      "type": "color",
+      "value": "{color.functional.warning.800}"
+    },
+    "900": {
+      "type": "color",
+      "value": "{color.functional.warning.900}"
+    },
+    "950": {
+      "type": "color",
+      "value": "{color.functional.warning.950}"
+    }
+  }
+}

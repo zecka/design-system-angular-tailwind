@@ -8,7 +8,8 @@
   "module": "./index.js",
   "scripts": {
     "build": "node build.js",
-    "dev": "node build.js --watch"
+    "dev": "node build.js --watch",
+    "lint:css": "stylelint 'src/**/*.css' --config .stylelintrc.json"
   },
   "devDependencies": {
     "@tailwindcss/cli": "4.1.1",
@@ -22,6 +23,7 @@
     "prettier": "3.5.3",
     "prettier-plugin-svelte": "3.3.3",
     "prettier-plugin-tailwindcss": "0.6.11",
+    "stylelint": "^16.24.0",
     "tailwindcss": "^4.1.1"
   },
   "dependencies": {

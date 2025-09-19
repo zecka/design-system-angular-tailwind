@@ -1,6 +1,3 @@
 @import "tailwindcss";
-@import "../../../packages/ds-tokens/build/css/index.css";
+@import "../../../packages/ds-tokens/dist/index.css";
 @plugin "../../../packages/ds-css";
-.btn {
-    background: red;
-}

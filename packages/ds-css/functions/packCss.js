@@ -42,8 +42,6 @@ const readAllCSSDirectories = async (excludeFiles = [], light = false) => {
 const readDirectoryContent = async (directory, layerName, excludeFiles = [], light = false) => {
     const files = await getFileNames(directory, ".css", false)
     let filteredFiles = filterExcludedFiles(files, excludeFiles).filter(file => light ? file.endsWith(".light") : !file.endsWith(".light"))
-    console.log(`📦 Packing ${directory} (${filteredFiles.length} files)...`)
-    console.log(light, filteredFiles)
     const contents = await Promise.all(
         filteredFiles.map(async (file) => {
             const content = await readFileContent(`${directory}/${file}.css`)

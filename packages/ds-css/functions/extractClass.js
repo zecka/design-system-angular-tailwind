@@ -49,9 +49,7 @@ export const extractClasses = async ({ srcDir }) => {
     try {
         // Read all CSS files from the styles directory
         const stylesDir = path.join(import.meta.dirname, "..", "src", srcDir)
-        console.log("Reading styles from:", stylesDir)
         const cssFiles = await fs.readdir(stylesDir)
-        console.log("Found CSS files:", cssFiles)
         const filteredCssFiles = cssFiles.filter((file) => file.endsWith(".css"))
 
         if (filteredCssFiles.length === 0) {

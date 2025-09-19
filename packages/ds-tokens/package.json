@@ -3,13 +3,27 @@
     "version": "0.0.0",
     "type": "module",
     "scripts": {
-        "build": "tsx build.ts",
-        "pull-tokens": "tsx cli/fetch-tokens.ts"
+        "build": "tsx src/build.ts",
+        "build:plugin": "tsup",
+        "pull-tokens": "tsx src/fetch-tokens.ts"
+    },
+    "main": "./dist/cjs/stylelint-plugin.cjs",
+    "module": "./dist/esm/stylelint-plugin.js",
+    "exports": {
+        "require": "./dist/cjs/stylelint-plugin.cjs",
+        "import": "./dist/esm/stylelint-plugin.js"
+    },
+    "peerDependencies": {
+        "stylelint": "^16.24.0"
     },
     "devDependencies": {
         "@types/node": "^24.5.2",
+        "@types/stylelint": "^14.0.0",
         "fs": "0.0.1-security",
+        "json-to-ts": "^2.1.0",
         "style-dictionary": "^5.0.4",
+        "stylelint": "^16.24.0",
+        "tsup": "^8.5.0",
         "tsx": "^4.20.5"
     },
     "dependencies": {
