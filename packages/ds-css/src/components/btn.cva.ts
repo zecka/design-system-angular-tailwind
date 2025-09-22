@@ -1,7 +1,7 @@
 import { cva } from "class-variance-authority";
+import type { VariantProps } from "class-variance-authority";
 
-export const example = "mb-2"
-const btn = cva(["btn mb-3"], {
+export const btn = cva(["btn mb-3"], {
     variants: {
         intent: {
             primary: ["btn-primary"],
@@ -19,5 +19,4 @@ const btn = cva(["btn mb-3"], {
 
 });
 
-
-export default btn;
+export type BtnVariants = VariantProps<typeof btn>

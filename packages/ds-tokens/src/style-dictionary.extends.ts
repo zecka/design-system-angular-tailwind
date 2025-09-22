@@ -44,8 +44,8 @@ const tokenToCssVarname = (t: TransformedToken) => {
 StyleDictionary.registerFormat({
     name: "typescript/declarations",
     format: ({ dictionary, ...rest }) => {
-        const destination = rest.file?.destination || 'variables.d.ts';
-        const typeName = rest?.options?.typeName || kebabToPascal(destination.replace('.d.ts', ''));
+        const destination = rest.file?.destination || 'variables.types.ts';
+        const typeName = rest?.options?.typeName || kebabToPascal(destination.split('.')[0]);
         const vars = dictionary.allTokens
             .map((t) => `'${tokenToCssVarname(t)}'`)
             .join(" | ");
@@ -87,13 +87,24 @@ function buildNestedObject(tokens: TransformedToken[]) {
 
 
 StyleDictionary.registerFormat({
-    name: 'typescript/dictionnary-object-const',
+    name: 'javascript/dictionnary-object-const',
     format: function ({ dictionary }) {
         const tokenObjects = buildNestedObject(dictionary.allTokens);
         return (
             'export default ' +
             JSON.stringify(tokenObjects, null, 2) +
-            ' as const;\n'
+            ';\n'
+        );
+    },
+});
+StyleDictionary.registerFormat({
+    name: 'typescript/dictionnary-object-const-def',
+    format: function ({ dictionary }) {
+        const tokenObjects = buildNestedObject(dictionary.allTokens);
+        return (
+            'declare const root: RootObject\n' +
+            'export default root\n' +
+            JsonToTS.default(tokenObjects).join('\n')
         );
     },
 });

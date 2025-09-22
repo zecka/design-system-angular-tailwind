@@ -32,7 +32,6 @@
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0"
   },
-  "dependencies": {},
   "devDependencies": {
     "@angular-devkit/build-angular": "^19.0.0",
     "@angular/build": "^19.0.0",

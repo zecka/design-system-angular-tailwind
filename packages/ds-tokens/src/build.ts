@@ -27,13 +27,19 @@ const cssBuildFiles = (opts: { filesName: string, selector: string, filter: File
             filter: opts.filter
         },
         {
-            destination: `${opts.filesName}.ts`,
-            format: "typescript/dictionnary-object-const",
+            destination: `${opts.filesName}.js`,
+            format: "javascript/dictionnary-object-const",
             options: {},
             filter: opts.filter
         },
         {
             destination: `${opts.filesName}.d.ts`,
+            format: "typescript/dictionnary-object-const-def",
+            options: {},
+            filter: opts.filter
+        },
+        {
+            destination: `${opts.filesName}.types.ts`,
             format: "typescript/declarations",
             filter: opts.filter,
         },
