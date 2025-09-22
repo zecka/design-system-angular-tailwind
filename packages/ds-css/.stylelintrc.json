@@ -3,6 +3,13 @@
         "../ds-tokens/stylelint-plugin.cjs"
     ],
     "rules": {
-        "acme/no-unknown-css-vars": true
+        "acme/no-unknown-css-vars": [
+            {
+                "allowedExtraVars": [
+                    "--debug-border",
+                    "--brand-override"
+                ]
+            }
+        ]
     }
 }
