@@ -7,6 +7,7 @@
     justify-content: center;
     flex-shrink: 0;
     background: yellow;
+    @apply example;
 }
 .btn-primary{
     background-color: var(--component-button-primary-default-color-background);

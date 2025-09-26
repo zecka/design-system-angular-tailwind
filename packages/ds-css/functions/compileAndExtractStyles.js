@@ -1,7 +1,7 @@
 import path from "node:path"
 import { promises as fs } from "node:fs"
 import { compile } from "tailwindcss"
-
+import { loadUtilities } from "./loadUtilities.js"
 export async function loadThemes() {
   const [defaultTheme, theme] = await Promise.all([
     fs.readFile(
@@ -16,6 +16,7 @@ export async function loadThemes() {
 export async function compileAndExtractStyles(styleContent, defaultTheme, theme) {
   const compiledContent = (
     await compile(`
+    ${loadUtilities()}
     @layer theme{${defaultTheme}${theme}}
     @layer wrapperStart{${styleContent}}
     @layer wrapperEnd
