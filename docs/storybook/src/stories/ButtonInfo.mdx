@@ -1,0 +1,18 @@
+import { Meta, Canvas, Story, Source } from '@storybook/addon-docs/blocks';
+import * as ButtonStories from './Button.stories';
+
+<Meta of={ButtonStories} />
+
+# Button
+
+<button class="btn">Btn inside mdx</button>
+
+```html
+<button class="btn">Btn inside mdx</button>
+```
+
+## Story inside MDX
+<Canvas>
+  <Story of={ButtonStories.Primary} />
+</Canvas>
+
